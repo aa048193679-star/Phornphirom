@@ -1,0 +1,76 @@
+body{
+    background-color: azure;
+}
+h1{
+    color: cadetblue;
+    font-size: 30px;
+}
+h2{
+    color: rgb(30, 123, 149);
+}
+h3{
+    color: rgb(94, 71, 41);
+}
+h4{
+    color: rgb(143, 83, 20);
+}
+
+a:link {
+  color: rgb(136, 51, 108);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(157, 98, 128);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(199, 71, 71);
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: rgb(165, 165, 46);
+  background-color: transparent;
+  text-decoration: underline;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: burlywood;
+    font-family: Verdana;
+    font-size: 80px;
+    padding: 30px;
+    text-align: center;
+}
+nav{
+    float: left;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+    background-color: chocolate;
+    font-size: 30px;
+}
+article{
+    float: left;
+    width: 70%;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(237, 195, 195);
+    color: brown;
+    font-size: 30px;
+}
+footer{
+    height: auto;
+    background-color: rgb(158, 75, 153);
+    font-size: 80px;
+    text-align: center;
+}
+@media (max-width:600px){
+    nav, article{
+        width: 100%;
+        height: auto;
+    }
+}
