@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มรับสมัครนักศึกษาใหม่</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="image/logo_kmutnb.png" alt="logo" width="100" height="100">
+    <div class="header-text">
+      <h3>รับสมัครนักศึกษาใหม่</h3>
+      <h5>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h5>
+    </div>
+  </header>
+
+  <section>
+    <nav>
+      <a href="Form.html">หน้าแรก</a> <br>
+      <a href="Form.html">รับสมัคร</a> <br>
+      <a href="Form.html">ประกาศรายชื่อ/ผลสอบ</a> <br>
+      <a href="Form.html">ติดต่อเรา</a>
+    </nav>
+  
+    <article>
+      <form>
+        <label>ชื่อ - สกุล</label>
+        <input type="text" pattern="[ก-ฮะ-์]+\s+[ก-ฮะ-์]+"> <br>
+        <label>ชื่อ - สกุล (ภาษาอังกฤษพิมพ์ใหญ่ทั้งหมด)</label>
+        <input type="text" pattern="[A-Z]+\s+[A-Z]+"> <br>
+        <label>เลขบัตรประจำตัวประชาชน (x-xxxx-xxxxx-xx-x)</label>
+        <input type="text" pattern="[0-9]{1}-[0-9]{4}-[0-9]{5}-[0-9]{2}-[0-9]{1}"> <br>
+        <label>เพศโดยกำเนิด</label><br>
+        <input type="radio" name="gender"> 
+        <label>ชาย</label> <br>
+        <input type="radio" name="gender"> 
+        <label>หญิง</label> <br>
+        <label>วันเกิด</label>
+        <input type="date"> <br>
+        <label>สัญชาติ</label>
+        <input type="text"> <br>
+        <label>เชื้อชาติ</label>
+        <input type="text"> <br>
+        <label>น้ำหนัก</label>
+        <input type="number" min="40" max="200"> <br>
+        <label>ส่วนสูง</label>
+        <input type="number" min="140" max="200"> <br>
+        <label>กรุ๊ปเลือด</label> <br>
+        <input type="radio" name="blood type"> 
+        <label>O</label> <br>
+        <input type="radio" name="blood type"> 
+        <label>A</label> <br>
+        <input type="radio" name="blood type"> 
+        <label>B</label> <br>
+        <input type="radio" name="blood type"> 
+        <label>AB</label> <br>
+        <input type="radio" name="blood type"> 
+        <label>ไม่ทราบ</label> <br>
+        <label>โรคประจำตัว</label>
+        <input type="text"> <br>
+        <label>ที่อยู่ปัจจุบัน</label>
+        <input type="text"> <br>
+        <label>เบอร์ติดต่อ (xxx-xxx-xxxx)</label>
+        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+        <label>อีเมล</label>
+        <input type="email"> <br>
+        <label>สถานศึกษาเดิม</label>
+        <input type="text"> <br>
+        <label>เกรดเฉลี่ยสะสม</label>
+        <input type="number" step="0.01" min="2.50" max="4.00"> <br>
+        <label>สาขาวิชา</label> <br>
+        <input type="radio" name="Field of study"> 
+        <label>IT</label> <br>
+        <input type="radio" name="Field of study"> 
+        <label>ITI</label> <br>
+        <input type="radio" name="Field of study"> 
+        <label>ITT</label> <br>
+        <input type="radio" name="Field of study"> 
+        <label>INE</label> <br>
+        <input type="radio" name="Field of study"> 
+        <label>INET</label> <br>
+        <label>แนบรูปภาพตนเอง</label>
+        <input type="file"> <br>
+        <label>แนบสำเนาบัตรประชาชน</label>
+        <input type="file"> <br>
+        <label>แนบสำเนาทะเบียนบ้าน</label>
+        <input type="file"> <br>
+        <label>แนบระเบียนแสดงผลการเรียน (ปพ.1)</label>
+        <input type="file"> <br>
+        <p>กรุณาตรวจสอบความถูกต้องของข้อมูลก่อนส่งใบสมัคร</p>
+        <div class="button">
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+        </div>
+      </form>
+    </article>
+  </section>
+
+  <footer>
+    Email: admission@op.kmutnb.ac.th
+  </footer>
+
+</body>
+</html>
